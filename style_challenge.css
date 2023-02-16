@@ -1,0 +1,188 @@
+html{
+    background-color: #AAB2D5;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    max-width: auto;
+    overflow: hidden;
+    max-height: 1024;
+    margin: 0 auto; 
+}
+
+.logo{
+    display: inline-block;
+    margin: 1%;
+}
+
+.input-padron{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    margin: 0 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 22px;
+    background: #ABB2D5;
+    box-shadow: none;
+    border: none;
+}
+
+.input-padron::placeholder{
+    color: #0e3b71;
+}
+
+
+.cuadrado {
+   position: absolute;
+    top: 20px; left: 825px;
+    min-width: 400px; 
+    height: 93%; 
+    border-radius: 32px;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(10, 56, 113, 1);
+    }
+
+.texto-resultado{
+    position: relative;
+    width: 310px;
+    height: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 22px;
+    color: #0a3871;
+    top:20px;
+    left: 870px;
+}
+
+.copiar{
+    position:absolute;
+    width: 150px;
+    height: 67px;
+    left: 940px;
+    top:500px;
+
+    border-radius: 24px;
+    background: #F3F5FC;
+    color: #0A3871;
+    padding:10px 40px;
+    box-shadow: 5px 5px 10px 5px #3e3b3b;
+}
+
+.lateral-out{
+    position: absolute;
+    text-align: center;
+    left: 870px;
+    top:160px;
+}
+
+.muñequito{
+    width: 236px;
+    height: 180px;
+}
+
+p{
+    font-style: normal;
+    margin: 0 0 1em;
+}
+
+.lateral-out p:first-child{
+    padding: 3px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.botones, copiar{
+    width: 328px;
+    height: 67px;
+
+    display: flex;
+    position: absolute;
+    top: 500px;
+    left: 350px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+.encriptar{
+    border-radius: 24px;
+    background: #0A3871;
+    padding: 10px 40px ;
+    margin-right:20px;
+    color: #D8DFE8;
+    box-shadow: 5px 5px 10px 5px #212020;
+}
+
+.desencriptar{
+    border-radius: 24px;
+    background: #F3F5FC;
+    padding:10px 40px;
+    color: #0A3871;
+    box-shadow: 5px 5px 10px 5px #212020;
+}
+
+.encriptar:hover{
+    background:#052051;
+    transform: scale(1.1) ; 
+    box-shadow: 5px 5px 10px 5px #3e3b3b;
+}
+
+.desencriptar:hover{
+    background: #afb6d3;
+    transform: scale(1.1) ; 
+    box-shadow: 5px 5px 10px 5px #3e3b3b;
+}
+
+.copiar:hover{
+    background: linear-gradient(#afb6d3,#F3F5FC);
+    transform: scale(1.1) ; 
+    box-shadow: 5px 5px 10px 5px #3e3b3b;
+}
+
+/* Medias Query*/
+
+@media screen and (max-width: 850px){
+    body{
+        width:100%;
+    }
+    .logo{
+        margin: 4%;
+    }
+    .input-padron{
+        width: 100%;
+        margin: 5% 0;
+        width: 100%;
+    }
+    .muñequito{
+        display:none;
+    }
+    .lateral-out{
+        top:100%;
+        left:60%;
+    }
+
+    .cuadrado{
+        width: 900px;
+        height:200px;
+        top: 688px;
+        left:20px;
+    }
+
+    .botones{
+        display: block;
+        position: relative;
+        width: 100%;
+        left: 50%;
+        width: 332px;
+        height: 67px;
+    }
+    
+}
+
